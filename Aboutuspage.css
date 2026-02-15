@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(to bottom,
+            #f5f3e8,
+            #ffffff,
+            #eef5ee);
+}
+
+/*  HEADER  */
+.header {
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 140px;
+}
+
+
+.header h1 {
+    font-size: clamp(22px, 4vw, 32px);
+}
+
+.header p {
+    font-size: clamp(13px, 2vw, 16px);
+}
+
+/*  TOP BAR  */
+
+.bar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+/*CSS for the top bar that is presenyt in the html about us page*/
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background-color: #1f3d2b;
+    flex-wrap: wrap;
+}
+
+/*logo of the ecomart*/
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+/*it set the place for cart and search button */
+.right-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/*css for the search box*/
+.search-box {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/*css foe the cart icon*/
+.cart {
+    font-size: 20px;
+    color: white;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+/*CSS for the search icon*/
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/*  MENU  */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 18px 0;
+    background-color: #e6efdf;
+    flex-wrap: wrap;
+}
+
+/* Contact Section */
+.menu a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+
+/*CSS for the menu in navigation bar*/
+.menu:hover a:not(:hover) {
+    opacity: .7;
+    transform: scale(.85);
+    color: rgb(224, 180, 123);
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/*CSS for the heading 2 in the container that has our mission and our team*/
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Contact Section */
+.about h3 {
+    font-size: 21px;
+    color: #17823b;
+    margin-bottom: 10px;
+}
+
+/*css for the paragraph*/
+.about p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/*CSS for  OUR TEAM   */
+
+.teamconta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+/*CSS for the team card that has the details of our team member*/
+.teamcard {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+.teamcard {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact Section */
+.teamcard img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.teamimg {
+    position: relative;
+    overflow: hidden;
+}
+
+.teamimg img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+
+/* Hover overlay */
+.teaminfo {
+    position: absolute;
+    inset: 0;
+    background: rgba(31, 61, 43, 0.92);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+/*CSS that is used for h3 in the container or product card*/
+.teaminfo h3 {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/*CSS for how the team card will show */
+.teaminfo span {
+    font-size: 14px;
+    color: #a8e6a3;
+    margin-bottom: 10px;
+}
+
+/*CSS for the teaminfo that has paragrapg*/
+.teaminfo p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Hover effects */
+.teamcard:hover img {
+    transform: scale(1.1);
+}
+
+/*hover effect for the team card*/
+.teamcard:hover .teaminfo {
+    opacity: 1;
+}
+
+/* Contact Section */
+.teambtn {
+    padding: 12px 0 16px;
+    text-align: center;
+}
+
+.teambtn a {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #1f3d2b;
+    border: 2px solid #1f3d2b;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.teambtn a:hover {
+    background-color: #1f3d2b;
+    color: #ffffff;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    gap: 40px;
+}
+
+.contact form {
+    flex: 2;
+}
+
+.contactinfo {
+    flex: 1;
+    font-size: 20px;
+}
+
+/* CSS for the iframe the shows the map of our store*/
+.map {
+    margin-top: 15px;
+    max-width: 320px;
+}
+
+@media (max-width: 768px) {
+    .map {
+        max-width: 100%;
+    }
+}
+
+/*CSS for how the map will be display*/
+.map iframe {
+    width: 100%;
+    height: 180px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Contact Section */
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/*CSS for the input in the name and  text area that a user can provide the message*/
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Contact Section */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #03ba49;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*HOver effect for the submit button*/
+button:hover {
+    background-color: #126c31;
+}
+
+.contactinfo h4 {
+    color: #1f3d2b;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*  FOOTER  */
+.footer {
+    background-color: #1f3d2b;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/*CSS for the div class footercontr*/
+.footercontr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*CSS for the H3 and H4 inside the footer section*/
+.footer h3,
+.footer h4 {
+    margin-bottom: 10px;
+    color: #a8e6a3;
+}
+
+/*CSS for the paragraph tag in the footer section*/
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footerlink ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerlink ul li {
+    margin-bottom: 8px;
+}
+
+.footerlink ul li a,
+.footerbtn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footerlink ul li a:hover,
+.footerbtn a:hover {
+    text-decoration: underline;
+}
+
+.footerbtn {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #3a5f4b;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .banner {
+        height: 220px;
+    }
+}
+
+/*  MEDIA QUERIES  */
+
+/* Mobile (max 600px) */
+@media (max-width: 600px) {
+    .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rightside {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+}
+
+/* Tablet (600px–900px) */
+@media (max-width: 900px) {
+    .productcontr {
+        gap: 20px;
+    }
+}
+
+.footerbx {
+    flex: 0 0 22%;
+    min-width: 200px;
+}
+
+
+/* Headings */
+.footerbx h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2ecc71;
+}
+
+/* Links */
+.footerbx a {
+    display: block;
+    color: #e0f2ea;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s ease;
+}
+
+/*Hover effect for the Footer box of quickl links*/
+.footerbx a:hover {
+    color: #2ecc71;
+    padding-left: 6px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Input */
+.footerbx input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+.footerbx button {
+    margin-top: 10px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #1fbb60;
+    color: #0f3d2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/*Hover effect for the button that contain in the footer*/
+.footerbx button:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Social icons below EcoMart in footer */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/*INage for the social medai icon */
+.social-icons a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/*Hover effect for the image that is present in the footer section*/
+.social-icons a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}

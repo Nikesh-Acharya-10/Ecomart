@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nikesh Acharya | Portfolio</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Body */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Portfolio Header */
+        .portfolio-container {
+            max-width: 1000px;
+            margin: 80px auto;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image */
+        .profile-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Content */
+        .profile-content {
+            flex: 2;
+            padding-left: 40px;
+        }
+
+        .profile-content h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .profile-content h3 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .profile-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+            transition: 0.3s;
+        }
+
+        .about {
+            background-color: #f2b441;
+        }
+
+        .skills {
+            background-color: #f15a40;
+        }
+
+        .contact {
+            background-color: #7fd1d6;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+        }
+
+        /* Sections */
+        .section {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #eaeaea;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* Links */
+        a {
+            color: #f15a40;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #555;
+        }
+
+        /*  HEADER  */
+        .header {
+            text-align: center;
+            padding: 30px 10px;
+            margin-top: 140px;
+        }
+
+
+        .header h1 {
+            font-size: clamp(22px, 4vw, 32px);
+        }
+
+        .header p {
+            font-size: clamp(13px, 2vw, 16px);
+        }
+
+        /*  TOP BAR  */
+
+        .bar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #ffffff;
+        }
+
+        /*CSS for the top bar that is presenyt in the html about us page*/
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 30px;
+            background-color: #1f3d2b;
+            flex-wrap: wrap;
+        }
+
+        /*logo of the ecomart*/
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /*it set the place for cart and search button */
+        .right-section {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        /*css for the search box*/
+        .search-box {
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        /*css foe the cart icon*/
+        .cart {
+            font-size: 20px;
+            color: white;
+        }
+
+        .search-wrapper {
+            position: relative;
+        }
+
+        /*CSS for the search icon*/
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+
+        /*  MENU  */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 18px 0;
+            background-color: #e6efdf;
+            flex-wrap: wrap;
+        }
+
+        /* Contact Section */
+        .menu a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: black;
+        }
+
+        /*CSS for the menu in navigation bar*/
+        .menu:hover a:not(:hover) {
+            opacity: .7;
+            transform: scale(.85);
+            color: rgb(224, 180, 123);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- heading and navigation bar -->
+    <header class="bar">
+        <div class="top">
+            <div class="logo">
+                <span class="mart">EcoMart</span>
+                <span class="leaf">🍃</span>
+            </div>
+            <span class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+        </div>
+        </div>
+
+        <hr>
+        <!-- Nav bar that have class menue and which include anchor tag -->
+        <nav class="menu">
+            <a href="HomePage.html">Home</a>
+            <a href="ProductPage.html">Products</a>
+            <a href="BlogPage.html">Blog</a>
+            <a href="ResearchPage.html">Research</a>
+            <a href="AboutUsPage.html">About Us</a>
+            <a href="login page.html">Login</a>
+        </nav>
+    </header>
+    <!-- Main Container -->
+    <div class="portfolio-container">
+
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img src="Images/nik.jpeg" alt="Nikesh Acharya">
+        </div>
+
+        <!-- Content -->
+        <div class="profile-content">
+            <h1>Hi! I'm Nikesh Acharya</h1>
+            <h3>Aspiring Web Developer & Student from Nepal</h3>
+
+            <p>
+                my name is Nikesh Acharya. Aspiring to be a university student and a learning student. Welcome to my
+                portfolio! Here, you'll find a showcase of my skills, projects, and experiences as I embark on my
+                journey to become a proficient web developer.
+
+            </p>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="#about" class="btn about">About</a>
+                <a href="#skills" class="btn skills">Skills</a>
+                <a href="#contact" class="btn contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am Nikesh Acharya, a university student at Itahari International College, currently pursuing my studies in
+            the field of computer science.
+            I have a keen interest in web development and programming, and I am dedicated to honing my skills in these
+            areas. As i am more eager to learn cyber security as well.
+            I have experienced a lot in this first course of IIS and I am excited to continue my journey in the world of
+            technology.
+            I'm passionate about creating beautiful and functional websites that provide great user experiences.
+            Feel free to explore my work and get in touch if you'd like to connect!
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+            <div class="skill">GitHub</div>
+            <div class="skill">VS Code</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Get In Touch</h2>
+
+        <p>Email: nikeshacharya0310@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/Nikesh-Acharya-10" target="_blank">Nikesh-Acharya-10</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/nikesh_acharya10/" target="_blank">@nikesh_acharya10</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Nikesh Acharya | Made with HTML & CSS</p>
+    </footer>
+
+</body>
+
+</html>

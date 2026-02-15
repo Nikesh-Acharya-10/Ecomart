@@ -1,0 +1,329 @@
+/*this is the css atributes that is applied to the whole webpage*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*this defines the css for the body of homepage*/
+body {
+    background: linear-gradient(to bottom,
+            #f5f3e8,
+            #ffffff,
+            #eef5ee);
+}
+
+/*This is the css for the search icon with its attributes*/
+.searchicon i {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.cart i {
+    font-size: 18px;
+    color: white;
+}
+
+/*css for front image, Banner Image */
+.container {
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 90%;
+    max-width: 1200px;
+    height: 450px;
+    display: flex;
+    gap: 10px;
+}
+
+/*it defines how the image will be displayed in body of home page*/
+.container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: all 0.5s ease-in-out;
+}
+
+/*hover effect for image */
+.container img:hover {
+    width: 25%;
+}
+
+/*this defines how the flex will start for div container*/
+.container div {
+    flex-grow: 1;
+
+}
+
+/* Mobile responsive for home page  */
+@media (max-width: 600px) {
+    .banner {
+        height: 220px;
+    }
+}
+
+/* CSS for  PRODUCTS samples  present in home page  */
+.productspart {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+/*this is for the heading of products section */
+.productspart h2 {
+    font-size: clamp(20px, 4vw, 26px);
+    margin-bottom: 30px;
+}
+
+.productcont {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/*this defines the attributes for the product card */
+.productcard {
+    width: 100%;
+    max-width: 260px;
+    background-color: rgb(234, 244, 236);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* hovver effect for product page*/
+.productcard:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.productcard.hover>.product-card:not(:hover) {
+    transform: scale(0.9, 0.9);
+    filter: blur(10px);
+}
+
+/*this shows how the image will be display in the productcard container*/
+.productimage {
+    width: 100%;
+    height: 180px;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    margin-bottom: 12px;
+}
+
+/*this defines the attributes of images */
+.productimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* this is for the product name */
+.productcard h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+.price {
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.productcard button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/*CSS for  research that contain news article and news */
+.research {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+/*css for the class that is named research box*/
+.researchbox {
+    width: 100%;
+    max-width: 900px;
+    margin: 15px auto;
+    background-color: #F1F8F3;
+    padding: 22px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/*hover effect for product card and research box*/
+.productcard,
+.researchbox {
+    border: 1px solid #CDE5D1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productcard:hover,
+.researchbox:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+/*CSS for  About Section which was link to about us page  */
+.about {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.aboutbtn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*this is for the about us button*/
+.aboutbtn1 {
+    padding: 10px 22px;
+    cursor: pointer;
+}
+
+/* CSS for  footer section for home page  */
+.footer {
+    background-color: #1f3d2b;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/*this is for the footer container that contain all the footer elements*/
+.footercontr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer h3,
+.footer h4 {
+    margin-bottom: 10px;
+    color: #a8e6a3;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footerlink ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerlink ul li {
+    margin-bottom: 8px;
+}
+
+/*this is for the footer links and button*/
+.footerlink ul li a,
+.footerbtn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footerlink ul li a:hover,
+.footerbtn a:hover {
+    text-decoration: underline;
+}
+
+.footerbtn {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #3a5f4b;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+
+
+/*this is for the product action button container*/
+.productacn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    gap: 8px;
+}
+
+.viewlink {
+    text-decoration: none;
+}
+
+/*this is for the view details button*/
+.viewbtn {
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    background-color: #2f6f3e;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.viewbtn:hover {
+    /*hover effect for the view details botton*/
+    background-color: #245a32;
+}
+
+/*this shows how the cart button will work and how to implemented the button*/
+.cartbtn {
+    padding: 7px 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/*hover effect for cart button*/
+.cartbtn:hover {
+    background-color: #e6efdf;
+    transform: scale(1.1);
+}
+
+/* to make resopnsive in all mobile decive css part  that have maximum width of 600px */
+@media (max-width: 600px) {
+    .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rightside {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+}
+
+/* Tablet (600px–900px) */
+@media (max-width: 900px) {
+    .productcont {
+        gap: 20px;
+    }
+}

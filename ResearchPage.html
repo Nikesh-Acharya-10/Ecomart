@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart</title>
+    <!--External CSS is linked using link -->
+    <link rel="stylesheet" href="ResearchPage.css"><!--external CSS for the research page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--link for the cart icon and searchbutton  -->
+    <!--Internal CSS for the research page  -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(to bottom,
+                    #f5f3e8,
+                    #ffffff,
+                    #eef5ee);
+        }
+
+        /*HEADER  */
+        .header {
+            text-align: center;
+            padding: 30px 10px;
+            margin-top: 140px;
+        }
+        .header h1 {
+            font-size: clamp(22px, 4vw, 32px);
+        }
+
+        .header p {
+            font-size: clamp(13px, 2vw, 16px);
+        }
+
+        /*  TOP BAR  */
+        .bar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #ffffff;
+        }
+
+        /*CSS for the top bar that is at the top of the research page */
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 30px;
+            background-color: #1f3d2b;
+            flex-wrap: wrap;
+        }
+
+        /*CSS for the logo of Ecomart */
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .rightsection {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        /*search box */
+        .searchbox {
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        /*CSS for the cart button */
+        .cart {
+            font-size: 20px;
+            color: white;
+        }
+
+        .searchwrapper {
+            position: relative;
+        }
+
+        /*CSS for the search icon */
+        .searchicon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+
+        /*  MENU  */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 18px 0;
+            background-color: #e6efdf;
+            flex-wrap: wrap;
+        }
+
+        /*CSS for the anchor tag */
+        .menu a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: black;
+        }
+
+        .menu:hover a:not(:hover) {
+            opacity: .7;
+            transform: scale(.85);
+            color: rgb(224, 180, 123);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- heading and navigation bar -->
+    <header class="bar">
+        <div class="top">
+            <div class="logo">
+                <span class="mart">EcoMart</span>
+                <span class="leaf">🍃</span>
+            </div>
+            <!--Top bar that include search and cart button inside the  header section -->
+            <div class="rightsection">
+                <div class="searchwrapper">
+                    <input type="text" placeholder="search" class="searchbox">
+                    <span class="searchicon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div><!--cart logo -->
+                <span class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Anchor tag to connect other pages of the website -->
+        <nav class="menu">
+            <a href="HomePage.html">Home</a>
+            <a href="ProductPage.html">Products</a>
+            <a href="BlogPage.html">Blog</a>
+            <a href="ResearchPage.html">Research</a>
+            <a href="AboutUsPage.html">About Us</a>
+            <a href="login page.html">Login</a>
+        </nav>
+    </header>
+    <!--Heading for the research page-->
+    <h1 class="pagetitle">Research & Comparison</h1>
+    <p>Research and comparison are planned as the study of the available websites and comparison of their features with
+        those of EcoMart as the way to learn the best design practices and to make the user experience more appropriate
+        with the help of a better usability and sustainability.
+
+    </p>
+    <section class="researchintro">
+        <h2>Why This Research Matters?</h2>
+        <p>
+            Our eco mart webpage is dedicated to the analysis and comparison of our site design and functionality with
+            other popular online commerce and sustainability-oriented sites like Amazon, Daraz, Etsy, Apple, and
+            Patagonia. The primary objective of this page is to research the design and application of various web
+            elements such as navigation bars, product pages, blogs, team section, and contact forms in websites in the
+            real world.
+
+            In this study, we did a close observation and analysis of the different popular websites and chose certain
+            elements to compare them. These websites were used as screenshots and design inspirations to learn about how
+            these websites are arranged, to use and to experience them. According to this analysis, EcoMart has adopted
+            better and environmentally friendly design options, which are less complex, informative, and user-friendly.
+
+            The research page is significant as it supports the choice in design applied in the EcoMart site. It also
+            indicates the site is not created in a vacuum but that a lot of research and comparison has been undertaken
+            to create the current site. Through learning and refining of the attributes that are weak in other existing
+            platforms, EcoMart offers enhanced usability, understandable navigation, informative and a sustainable
+            digital experience to its users.
+        </p>
+    </section>
+    <div class="researchcontainer">
+
+        <!-- LEFT COLUMN : EcoMart -->
+        <div class="researchcolumn">
+            <h2>EcoMart Web Components Analysis</h2>
+
+            <div class="researchcard">
+                <h3>Navigation Bar Analysis</h3>
+                <img src="images/navbar.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Provides links to different website pages</li>
+                    <li>Helps users navigate easily</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Eco-themed colors and branding</li>
+                    <li>Clear multi-page navigation</li>
+                    <li>Simple and understandable menu items</li>
+                </ul>
+            </div>
+
+            <div class="researchcard">
+                <h3>Product Page Analysis</h3>
+                <img src="images/product.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Displays product images and prices</li>
+                    <li>Allows users to browse products</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Eco-friendly product descriptions</li>
+                    <li>Clear “Add to Cart” and detail buttons</li>
+                    <li>Clean and user-focused layout</li>
+                </ul>
+            </div>
+
+            <div class="researchcard">
+                <h3>Blog Page Analysis</h3>
+                <img src="images/blog.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Displays blog posts with images</li>
+                    <li>Uses headings for blog previews</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Detailed and educational blog content</li>
+                    <li>Includes “Read More” option</li>
+                    <li>Focus on sustainability topics</li>
+                </ul>
+            </div>
+
+            <div class="researchcard">
+                <h3>Team Section Analysis</h3>
+                <img src="images/teambiooooo.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Displays team member names and roles</li>
+                    <li>Introduces people behind the website</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Detailed skills and experience</li>
+                    <li>Profile links for interaction</li>
+                    <li>Modern and interactive design</li>
+                </ul>
+            </div>
+
+            <div class="researchcard">
+                <h3>Contact Page Analysis</h3>
+                <img src="images/contact.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Allows users to send messages</li>
+                    <li>Includes basic input fields</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Structured and detailed form</li>
+                    <li>Multiple fields for clarity</li>
+                    <li>Chat option for quick support</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN : Other Websites -->
+        <div class="researchcolumn">
+            <h2>Other Website Components Analysis</h2>
+
+            <div class="researchcard">
+                <h3>Daraz – Product Listing</h3>
+                <img src="images/productdaraz.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Displays products with prices</li>
+                    <li>Uses grid-based product layout</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Focus on discounts over information</li>
+                    <li>Details visible only after clicking</li>
+                    <li>Less sustainability focus</li>
+                </ul>
+            </div>
+
+            <div class="researchcard">
+                <h3>Patagonia – Blog Section</h3>
+                <img src="images/blogpa.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Shows blog thumbnails</li>
+                    <li>Uses short summaries</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Very limited information</li>
+                    <li>No “Read More” option</li>
+                    <li>Less educational content</li>
+                </ul>
+            </div>
+
+            <div class="researchcard">
+                <h3>Etsy – Team Section</h3>
+                <img src="images/teambio.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Displays team member names</li>
+                    <li>Shows roles</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>No skills or experience shown</li>
+                    <li>No profile interaction</li>
+                    <li>Very basic design</li>
+                </ul>
+            </div>
+
+            <div class="researchcard">
+                <h3>Patagonia – Contact Form</h3>
+                <img src="images/contactpadda.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Provides contact option</li>
+                    <li>Allows message submission</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Very few form fields</li>
+                    <li>No chat feature</li>
+                    <li>Less effective communication</li>
+                </ul>
+            </div>
+
+            <div class="researchcard">
+                <h3>Patagonia – Navigation Bar</h3>
+                <img src="images/simplenavpatagoia.png">
+
+                <strong>Similarities:</strong>
+                <ul>
+                    <li>Provides basic navigation</li>
+                    <li>Links to main sections</li>
+                </ul>
+
+                <strong>Differences:</strong>
+                <ul>
+                    <li>Limited navigation links</li>
+                    <li>No eco-themed branding</li>
+                    <li>Simple and less engaging</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The Difference is listed below for the comparision of ecomart and other site in table format -->
+    <section class="research-table-section">
+        <h2 class="research-table-title">Detailed Research Comparison</h2>
+        <!-- Table  -->
+        <table class="researchtable">
+            <thead><!-- Table heading  -->
+                <tr><!-- Table row  -->
+                    <th>Component</th><!-- Table head  -->
+                    <th>EcoMart Website</th>
+                    <th>Researched Website</th>
+                    <th>Key Difference / Advantage</th>
+                </tr>
+            </thead>
+            <!-- Table body -->
+            <tbody>
+                <tr><!-- Table row  -->
+                    <td>Navigation Bar</td><!-- Table data  -->
+                    <td>Multi-page navigation with eco-themed design.Ecomart contains more links and styling.</td>
+                    <td>Limited navigation with basic styling.They don't have a better and easier navigation system.
+                    </td>
+                    <td>EcoMart provides better usability and branding.Ecomart has more links and styling than the
+                        researched sites.</td>
+                </tr>
+
+                <tr>
+                    <td>Product Page</td>
+                    <td>Eco-focused product cards with pricing details.We provide detailed product information and
+                        user-friendly environment.</td>
+                    <td>Standard product listing focused on discounts.They don't have discription of their products in
+                        details.</td>
+                    <td>EcoMart emphasizes sustainability information.We provide detailed product information and
+                        user-friendly environment.</td>
+                </tr>
+
+                <tr>
+                    <td>Blog Page</td>
+                    <td>Educational blog previews related to sustainability and eco-friendly practices.We provide
+                        detailed blog content and user-friendly environment.</td>
+                    <td>Short blog summaries with minimal content.They don't have detailed blog content.</td>
+                    <td>EcoMart delivers informative content to users As a user can also have a better experience and
+                        can read new content.</td>
+                </tr>
+
+                <tr>
+                    <td>Team Section</td>
+                    <td>Detailed team profiles with skills and experience.and the contact links in their personal
+                        protfilo.</td>
+                    <td>Only name and role displayed.They don't have detailed profiles or contact information.</td>
+                    <td>EcoMart builds stronger trust and transparency.We provide detailed team profiles and contact
+                        information. </td>
+                </tr>
+
+                <tr>
+                    <td>Contact Page</td>
+                    <td>Structured form with multiple input fields. We provide a comprehensive contact form with all
+                        necessary fields.</td>
+                    <td>Very basic contact form. They don't have a comprehensive contact form. </td>
+                    <td>EcoMart allows better user communication and fastest service.User can also have a better
+                        experience and can communicate with the team.</td>
+                </tr>
+            </tbody>
+            <!--body of table is closed  -->
+        </table>
+        <!-- research references links in research page -->
+    </section>
+    <section class="researchreferences">
+        <h3>Websites Used for Research</h3>
+        <ul>
+            <li>Amazon: <a
+                    href="https://www.amazon.in/?tag=googmantxtmob170-21&ascsubtag=_k_CjwKCAiA7LzLBhAgEiwAjMWzCPC9q_CS2Iv1Ko4gMNDVMIvgcB9mGLnb0B1diMN7mJ4o6HcR3OHwSxoCE5sQAvD_BwE_k_">click
+                    me</a></li>
+            <li>Etsy: <a href="https://www.etsy.com/">click me</a></li>
+            <li>Daraz: <a href="https://www.daraz.com.np/#?">click me</a></li>
+            <li>Apple: <a href="https://www.apple.com">click me</a></li>
+            <li>Patagonia:<a href="https://www.patagonia.com">click me</a></li>
+        </ul>
+    </section>
+
+
+    <!-- Footer for research page -->
+    <footer class="footer">
+        <div class="footercontr">
+            <!-- footer about section -->
+            <div class="footerabout">
+                <h3>EcoMart 🍃</h3>
+                <p>Promoting sustainable living</p>
+            </div>
+            <!--Quicks links   -->
+            <div class="footerlink">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="ProductPage.html">Shop</a></li>
+                    <li><a href="BlogPage.html">About</a></li>
+                    <li><a href="AboutUsPage.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--contact info apppear in the footer  -->
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>Email: info@ecomart.com</p>
+                <p>Phone: +977-976448745</p>
+                <p>Location: Dharan, Nepal</p>
+            </div>
+            <!-- quick message through email -->
+            <div class="footerbx">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get latest updates</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footerbtn">
+            <p>© 2026 EcoMart | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

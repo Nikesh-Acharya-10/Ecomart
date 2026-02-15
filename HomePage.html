@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--External CSS is linked using link of homepage CSS -->
+    <link rel="stylesheet" href="HomePage.css">
+    <!--internal css is used for nav bar and header section -->
+    <style>
+        .header {
+            text-align: center;
+            padding: 0px;
+            margin-top: 30px;
+        }
+
+        /*tag line is a class that have a quots about the ecomart*/
+        .tagline {
+            position: absolute;
+            left: 50%;
+            top: 22%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /*this the css for the font size in header class that include h1*/
+        .header h1 {
+            font-size: clamp(22px, 4vw, 32px);
+        }
+
+        /*css fo paragraph inside the header tag having class header*/
+        .header p {
+            font-size: clamp(13px, 2vw, 16px);
+        }
+
+        /* css for top bar heading with ecomart log and name  */
+
+        .bar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #ffffff;
+        }
+
+        /*this is a top bar above the navigation bar*/
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 30px;
+            background-color: #1f3d2b;
+            flex-wrap: wrap;
+        }
+
+        /*this is the css line used manage the logo of the Ecomart*/
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .rightside {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        /*this is the css for search box in home page*/
+        .searchbox {
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        /* this is the css for the cart logo*/
+        .cart {
+            font-size: 20px;
+            color: white;
+        }
+
+        .search {
+            position: relative;
+            /**/
+        }
+
+        /*Css for the search icon inside the header class*/
+        .searchicon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        /* css for navigation bar */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 18px 0;
+            background-color: #F1F8F3;
+            flex-wrap: wrap;
+        }
+
+        /*this defines the css for the anchor tag inside the menu class for nav bar*/
+        .menu a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: black;
+        }
+
+        .menu:hover a:not(:hover) {
+            /*hover effect for the nav bar*/
+            opacity: .9;
+            transform: scale(.85);
+            color: rgb(224, 180, 123);
+        }
+
+        /*css for read more button in home page */
+        .read-more-btn {
+            background-color: #2f6f3e;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /*hover effect for read more button */
+        .read-more-btn:hover {
+            background-color: #245a32;
+        }
+
+        /*css for search icon and cart icon inside the header class */
+        .searchicon i {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+        }
+
+        /*css for cart icon inside the header class */
+        .cart i {
+            font-size: 18px;
+            color: white;
+        }
+
+        /*css for the number of items inside the cart icon*/
+        #cart-count {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            background: red;
+            color: white;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        /*css for cart button inside the product card */
+        .cartbtn:hover {
+            background-color: #e6efdf;
+            transform: scale(1.1);
+        }
+
+        /*css for cart inside the header class */
+        .cart {
+            position: relative;
+        }
+    </style>
+</head>
+<!-- Body for home page starts hear  -->
+
+<body>
+
+    <!-- top bar heading with ecomart log and name -->
+    <header class="bar"><!-- header with class bar  -->
+        <div class="top"><!-- it a container inside header section  -->
+            <div class="logo">
+                <span class="mart">EcoMart</span> <!-- Mart name  -->
+                <div class="tagline">Everything you need for Sustainable and Eco-Friendly Living</div>
+                <span class="leaf">🍃</span><!-- logo of mart-->
+            </div>
+
+            <div class="rightside">
+                <div class="search">
+                    <input type="text" placeholder="search"
+                        class="searchbox"><!--search button inside a header section-->
+                    <span class="searchicon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <!--This is the cart icon inside the header tag at the top of the webpage just above the navigation bar-->
+                </div>
+                <span class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span><!-- cart icon with the number of items in the cart -->
+                </span>
+                </span>
+
+            </div>
+        </div>
+
+
+        <!--nav bar with class menu   -->
+        <nav class="menu">
+            <a href="HomePage.html">Home</a>
+            <a href="ProductPage.html">Products</a>
+            <a href="BlogPage.html">Blog</a>
+            <a href="ResearchPage.html">Research</a>
+            <a href="AboutUsPage.html">About Us</a>
+            <a href="login page.html">Login</a>
+        </nav>
+    </header>
+    <!--  section for image and message -->
+    <section>
+        <div class="header">
+            <h1>Welcome To EcoMart</h1>
+            <h3>Promoting Sustainable Living</h3>
+        </div>
+
+        <!--css for front image, Banner Image-->
+        <div class="container">
+            <img src="Images/1.webp" alt="EcoMart images">
+            <img src="Images/2.jpg" alt="EcoMart images">
+            <img src="Images/3.jpg" alt="EcoMart images">
+            <img src="Images/4.webp" alt="EcoMart images">
+            <img src="Images/5.webp" alt="EcoMart images">
+            <img src="Images/6.jpg" alt="EcoMart images">
+            <img src="Images/7.jpeg" alt="EcoMart images">
+            <img src="Images/15.jpeg" alt="EcoMart images">
+            <img src="Images/16.webp" alt="EcoMart images">
+
+        </div>
+    </section>
+    <!-- Our products sample for html -->
+    <section class="productspart">
+        <h2>Our Sustainable Product</h2>
+        <div class="productcont">
+
+            <div class="productcard">
+                <div class="productimage">
+                    <img src="Images/Amnotplastic-eco-friendly-bamboo-water-bottle-1.jpg"
+                        alt="Eco-Friendly Water Bottle"><!--this is the image of the product that will be display in the product card images-->
+                </div>
+                <!--some example of products with its card   -->
+                <h3>Eco-Friendly Water Bottle</h3><!--product sample 1 -->
+                <p font-size: 13px;>An eco-friendly bottle designed to keep you hydrated while reducing plastic waste.
+                </p><!-- in line CSS is used for paragraph -->
+                <span class="price">$8.09</span><!--Displays the price as same what is written inside the span tag-->
+                <div class="productacn">
+                    <a href="product details.html" class="viewlink">
+                        <button class="viewbtn">View Product</button>
+                    </a>
+                    <!--Cart button icon-->
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!--product sample 2  -->
+            <div class="productcard">
+                <div class="productimage">
+                    <img src="Images/unisex-organic-cotton-t-shirt-black-front-6824e22146167.webp"
+                        alt="Organic Cotton T-Shirt">
+                </div>
+                <h3>Organic Cotton T-Shirt</h3>
+                <p font-size: 13px;>Comfortable and stylish, made from 100% organic cotton.</p>
+                <!-- in line CSS is used for paragraph -->
+                <span class="price">$11.99</span>
+                <div class="productacn">
+                    <a href="product details.html" class="viewlink">
+                        <button class="viewbtn">View Product</button>
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!--product sample 3  -->
+            <div class="productcard">
+                <div class="productimage">
+                    <img src="Images/1469902.avif" alt="Biodegradable Cleaning Wipes">
+                </div>
+                <h3>Biodegradable Cleaning Wipes</h3>
+                <p font-size: 13px;>Clean your home effectively and responsibly.</p>
+                <!-- in line CSS is used for paragraph -->
+                <span class="price">$17.90</span>
+                <div class="productacn">
+                    <a href="product details.html" class="viewlink">
+                        <button class="viewbtn">View Product</button>
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!--product sample 4  -->
+            <div class="productcard">
+                <div class="productimage">
+                    <img src="Images/9.jpeg" alt="Dehydrated Banana">
+                </div>
+                <h3>Dehydrated Banana</h3>
+                <p font-size: 13px;>Sun-dried papaya bites packed with tropical sweetness.</p>
+                <!-- in line CSS is used for paragraph -->
+                <span class="price">$6.08</span>
+                <div class="productacn">
+                    <button class="viewbtn">View Product</button>
+
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+    </section>
+    <!--research section about articles and news-->
+    <section class="research">
+        <h2>Sustainability Research Summaries</h2>
+        <!--Research and articles linked with blog page  -->
+        <div class="researchbox">
+            <h3>Impact of Microplastics on Marine Ecosystems</h3>
+            <p>
+                A summary of recent findings on how microplastic pollution affects
+                ocean life and potential solutions.
+
+                <a href="BlogPage.html"><button class="read-more-btn"> Read More</button></a>
+
+            </p>
+        </div>
+        <!--Research sample 2  -->
+        <div class="researchbox">
+            <h3>Renewable Energy Technologies: A Global Outlook</h3>
+            <p>
+                Explore the latest advancements and adoption rates of renewable
+                energy sources worldwide.<a href="BlogPage.html"><button class="read-more-btn"> Read More </button></a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Html that contain  About Section which was link to about us page-->
+    <section class="about">
+        <h2>Learn More About EcoMart</h2>
+        <p>
+            Discover our mission, values, and how we're committed to a greener future.
+        </p>
+        <!--about button with information link with contact us and learn aboout us   -->
+        <div class="aboutbtn">
+            <a href="AboutUsPage.html"><button class="aboutbtn1">Learn about us</button></a>
+            <a href="AboutUsPage.html"><button class="aboutbtn1">Contact us</button></a>
+        </div>
+    </section>
+
+    <!-- html for footer section -->
+    <footer class="footer">
+        <div class="footercontr">
+
+            <div class="footerabout">
+                <h3>EcoMart 🍃</h3>
+                <p>Promoting sustainable living</p>
+            </div>
+            <!-- footer links as known as the quick links inside the footer class -->
+            <div class="footerlink">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="ProductPage.html">Shop</a></li>
+                    <li><a href="BlogPage.html">About</a></li>
+                    <li><a href="AboutUsPage.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--This contain the contact information for the Ecomart in the footer class at the button of the webpage-->
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>Email: info@ecomart.com</p>
+                <p>Phone: +977-976448745</p>
+                <p>Location: Dharan, Nepal</p>
+            </div>
+            <!--HTML for footer box inside the footer classs as this is the last part of the web page-->
+            <div class="footerbx">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get latest updates</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <!--end of footer for html page  -->
+        <div class="footerbtn">
+            <p>© 2026 EcoMart | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+        </div>
+    </footer><!--Footer tag is closed here-->
+    <script src="productpage.js"></script>
+</body><!--Body tag is closed here-->
+
+</html><!--This is the end of HTML as the closed tag of html is shown-->

@@ -1,0 +1,315 @@
+      /*Thii css will define the whole webpage */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Times New Roman', Times, serif;
+      }
+
+      /*This is the css define the body of the webpage*/
+      body {
+          background: linear-gradient(to bottom,
+                  #f5f3e8,
+                  #ffffff,
+                  #eef5ee);
+      }
+
+      /* css for header */
+      .header {
+          text-align: center;
+          padding: 30px 10px;
+          margin-top: 140px;
+      }
+
+      /*Css for the heading 1 in header class*/
+
+      .header h1 {
+          font-size: clamp(22px, 4vw, 32px);
+      }
+
+      .header p {
+          font-size: clamp(13px, 2vw, 16px);
+      }
+
+      /* css for top bar heading with ecomart log and name  */
+
+      .bar {
+          position: sticky;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+          background-color: #ffffff;
+      }
+
+      /*This is the css for the top bar of blog page*/
+      .top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 18px 30px;
+          background-color: #1f3d2b;
+          flex-wrap: wrap;
+      }
+
+      /*This is the css for the logo of Webpage*/
+      .logo {
+          font-size: 26px;
+          font-weight: bold;
+          color: white;
+      }
+
+      .rightside {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+      }
+
+      /*This is the css for the searchbox*/
+      .searchbox {
+          padding: 6px 12px;
+          border-radius: 20px;
+          border: none;
+          outline: none;
+      }
+
+      /*CSS for the cart icon*/
+      .cart {
+          font-size: 20px;
+          color: white;
+      }
+
+      .search {
+          position: relative;
+      }
+
+      /*CSS for the Search icon*/
+      .searchicon {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+      }
+
+      /* css for navigation bar */
+      .menu {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          padding: 18px 0;
+          background-color: #e6efdf;
+          flex-wrap: wrap;
+      }
+
+      /*THis is the css for the anchor tag for the navigation bar*/
+      .menu a {
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 16px;
+          color: black;
+      }
+
+      .menu:hover a:not(:hover) {
+          opacity: .7;
+          transform: scale(.85);
+          color: rgb(224, 180, 123);
+      }
+
+
+      /*  LOGIN SECTION */
+
+      .loginwrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: calc(100vh - 140px);
+          /* space for header */
+          padding: 20px;
+      }
+
+      /* login card */
+      .logincard {
+          background: #EAF4EC;
+          width: 350px;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+          animation: fadeIn 0.6s ease-in-out;
+      }
+
+      /* login card */
+      .logincard h2 {
+          text-align: center;
+          margin-bottom: 20px;
+          color: #2c3e50;
+      }
+
+      /* form group CSS*/
+      .formgroup {
+          margin-bottom: 15px;
+      }
+
+      label {
+          font-size: 14px;
+          color: #555;
+          display: block;
+          margin-bottom: 5px;
+      }
+
+      /*CSS for the input button */
+      input {
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          outline: none;
+          transition: 0.3s;
+      }
+
+      input:focus {
+          border-color: #27ae60;
+          box-shadow: 0 0 5px rgba(39, 174, 96, 0.4);
+      }
+
+      /* login card */
+      .loginbtn {
+          width: 100%;
+          padding: 12px;
+          background: #27ae60;
+          color: white;
+          font-size: 16px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+
+      /*Hover effect for the login button */
+      .loginbtn:hover {
+          background: #219150;
+          transform: translateY(-2px);
+      }
+
+      /* login card */
+      .links {
+          text-align: center;
+          margin-top: 15px;
+          font-size: 14px;
+      }
+
+      /*CSS for the anchor tag */
+      .links a {
+          color: #27ae60;
+          text-decoration: none;
+      }
+
+      /*Hover effect for the links having anchor tag */
+      .links a:hover {
+          text-decoration: underline;
+      }
+
+      /* login card */
+      .error {
+          color: red;
+          font-size: 13px;
+          margin-top: 5px;
+      }
+
+      /* CSS for  footer section for home page  */
+      .footer {
+          background-color: #1f3d2b;
+          color: #ffffff;
+          padding: 40px 20px 20px;
+          font-family: Arial, sans-serif;
+      }
+
+      .footercontr {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 20px;
+      }
+
+      .footer h3,
+      .footer h4 {
+          margin-bottom: 10px;
+          color: #a8e6a3;
+      }
+
+      .footer p {
+          margin: 5px 0;
+          font-size: 14px;
+      }
+
+      .footerlink ul {
+          list-style: none;
+          padding: 0;
+      }
+
+      .footerlink ul li {
+          margin-bottom: 8px;
+      }
+
+      .footerlink ul li a,
+      .footerbtn a {
+          color: #ffffff;
+          text-decoration: none;
+      }
+
+      .footerlink ul li a:hover,
+      .footerbtn a:hover {
+          text-decoration: underline;
+      }
+
+      .footerbtn {
+          text-align: center;
+          margin-top: 30px;
+          border-top: 1px solid #3a5f4b;
+          padding-top: 15px;
+          font-size: 14px;
+      }
+
+      /* animation */
+      @keyframes fadeIn {
+          from {
+              opacity: 0;
+              transform: translateY(10px);
+          }
+
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      /* responsive styles for mobile with max width of 600px  */
+      @media (max-width: 600px) {
+          .top {
+              flex-direction: column;
+              gap: 10px;
+          }
+
+          /* */
+          .right-section {
+              width: 100%;
+              justify-content: center;
+          }
+
+          .menu {
+              gap: 12px;
+          }
+      }
+
+      /* responsive styles for tablet with max width of 900px  */
+      @media (max-width: 900px) {
+          .productcont {
+              gap: 20px;
+          }
+      }
+
+      /* Mobile responsive */
+      @media (max-width: 600px) {
+          .banner {
+              height: 220px;
+          }
+      }

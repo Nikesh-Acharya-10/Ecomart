@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart</title>
+    <!-- External link of the css -->
+    <link rel="stylesheet" href="productpage.css">
+    <!--Link for the cart icon and search icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Internal css  -->
+    <style>
+        /* Styling for cart and search icons */
+        .searchicon i {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Styling for cart icon */
+        .cart i {
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<!--The main part of the page   -->
+
+<body>
+
+    <!-- top bar heading with ecomart log and name -->
+    <header class="bar">
+        <div class="top">
+            <div class="logo">
+                <span class="mart">EcoMart</span> <!-- Mart name  -->
+                <span class="leaf">🍃</span><!-- logo of mart-->
+            </div>
+            <!-- cart icon section  -->
+            <div class="rightside">
+                <span class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span><!-- cart icon with the number of items in the cart -->
+                </span>
+
+            </div>
+        </div>
+
+        <hr>
+        <!-- Navigation  bar with anchor tag -->
+        <nav class="menu">
+            <a href="HomePage.html">Home</a>
+            <a href="ProductPage.html">Products</a>
+            <a href="BlogPage.html">Blog</a>
+            <a href="ResearchPage.html">Research</a>
+            <a href="AboutUsPage.html">About Us</a>
+            <a href="login page.html">Login</a>
+        </nav>
+    </header>
+    <br><br>
+    <!-- filter section html-->
+    <section class="filtersec">
+
+        <div class="search1">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <span class="searchicon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </div>
+        <!--filtration of the product category   -->
+        <div class="filterctr">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="bottle">Bottle</option>
+                <option value="clothing">Clothing</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="food">Food</option>
+                <option value="accessories">Accessories</option>
+            </select>
+            <!-- Sorting of the price from top to buttom -->
+            <select id="sortPrice">
+                <option value="default">Sort by Price</option>
+                <option value="low-high">Low → High</option>
+                <option value="high-low">High → Low</option>
+            </select>
+        </div>
+
+    </section>
+
+    <!-- html for products that are present in product page-->
+    <section class="productssect">
+        <h2 style="text-align: center;">Our Eco-friendly & Sustainable Products</h2>
+        <!--inline css for heading 2 is used-->
+        <div class="productcont">
+            <!--Product sample 1  -->
+            <div class="productcard" data-price="8.09" data-category="bottle">
+                <!-- class and price defined inside the div container for the shorting and for the category  -->
+
+                <div class="productimg">
+                    <img src="Images/Amnotplastic-eco-friendly-bamboo-water-bottle-1.jpg"
+                        alt="Eco-Friendly Water Bottle"><!-- Image of the product -->
+                </div>
+                <h3>Eco-Friendly Water Bottle</h3>
+                <p>An eco-friendly bottle designed to keep you hydrated while reducing plastic waste.</p>
+                <span class="price">$8.09</span><!-- span tag to span the price -->
+                <div class="productacn">
+                    <a href="product details.html"
+                        class="viewlink"><!--anchor tag to link this to the product details page  -->
+                        <button class="viewsbtn" onclick="openDetails('bottle.html')">
+                            View Details
+                        </button>
+                    </a>
+                    <!-- cart icon -->
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!-- Product sample 2 -->
+            <div class="productcard" data-price="11.99" data-category="clothing">
+
+                <div class="productimg">
+                    <img src="Images/unisex-organic-cotton-t-shirt-black-front-6824e22146167.webp"
+                        alt="Organic Cotton T-Shirt">
+                </div>
+                <h3>Organic Cotton T-Shirt</h3>
+                <p>Comfortable and stylish, made from 100% organic cotton.</p>
+                <span class="price">$11.99</span>
+                <div class="productacn">
+                    <a href="product details.html" class="viewlink">
+                        <button class="viewsbtn" onclick="openDetails('bottle.html')">
+                            View Details
+                        </button>
+
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!-- Product sample 3 -->
+            <div class="productcard" data-price="17.90" data-category="cleaning">
+
+                <div class="productimg">
+                    <img src="Images/1469902.avif" alt="Biodegradable Cleaning Wipes">
+                </div>
+                <h3>Biodegradable Cleaning Wipes</h3>
+                <p>Clean your home effectively and responsibly.</p>
+                <span class="price">$17.90</span>
+                <div class="productacn">
+                    <a href="product details.html" class="viewlink">
+                        <button class="viewsbtn" onclick="openDetails('bottle.html')">
+                            View Details
+                        </button>
+
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!-- Product sample 4 -->
+            <div class="productcard" data-price="6.08" data-category="food">
+
+                <div class="productimg">
+                    <img src="Images/9.jpeg" alt="Dehydrated Banana">
+                </div>
+                <h3>Dehydrated Banana</h3>
+                <p>Sun-dried papaya bites packed with tropical sweetness.</p>
+                <span class="price">$6.08</span>
+                <div class="productacn">
+                    <button class="viewsbtn" onclick="openDetails('bottle.html')">
+                        View Details
+                    </button>
+
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!-- Product sample 5 -->
+            <div class="productcard" data-price="6.08" data-category="food">
+
+                <div class="productimg">
+                    <img src="Images/8.jpeg" alt="Green Tea ">
+                </div>
+                <h3>Green Tea </h3>
+                <p>A gentle brew for everyday wellness.Naturally refreshing green tea packed in convenient tea bags.</p>
+                <span class="price">$8.90</span>
+                <div class="productacn">
+
+                    <button class="viewsbtn" onclick="openDetails('bottle.html')">
+                        View Details
+                    </button>
+
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!-- Product sample 6 -->
+            <div class="productcard" data-price="2.90" data-category="accessories">
+
+                <div class="productimg">
+                    <img src="Images/7.jpeg" alt="Tote Cotton Bag">
+                </div>
+                <h3>Tote Cotton Bag</h3>
+                <p>Durable cotton bag designed for reuseablitlty and conveninance.</p>
+                <span class="price">$2.90</span>
+                <div class="productacn">
+
+                    <button class="viewsbtn">View Details</button>
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!-- Product sample 7 -->
+            <div class="productcard" data-price="11.99" data-category="clothing">
+
+                <div class="productimg">
+                    <img src="Images/hat.JPG " alt="Aloe vera Facewash">
+                </div>
+                <h3>Shaded Organic Bucket Hat</h3>
+                <p>Made from organic materials,this shaded hat offers comfort,protectionand sustainable style.</p>
+                <span class="price">$2.99</span>
+                <div class="productacn">
+
+                    <button class="viewsbtn">View Details</button>
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!--Product sample 8  -->
+            <div class="productcard" data-price="2.90" data-category="accessories">
+
+                <div class="productimg">
+                    <img src="Images/12.jpeg" alt="Bamboo Toothbrush">
+                </div>
+                <h3>Bamboo Toothbrush</h3>
+                <p>Soft,BPA-free nylon or charcoal-infused bristels designed to remove plaque effectively while
+                    remaining gentle on sensitive gums.</p>
+                <span class="price">$1.99</span>
+                <div class="productacn">
+
+                    <button class="viewsbtn">View Details</button>
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!-- Product sample 9 -->
+            <div class="productcard" data-price="2.90" data-category="accessories">
+
+                <div class="productimg">
+                    <img src="Images/14.jpeg" alt="Biodegradable Cleaning Wipes">
+                </div>
+                <h3>Natural Hand-made Candle</h3>
+                <p>Every candle is uniquely made by hand,ensuring superior quality control and apersonal touch in every
+                    touch.</p>
+                <span class="price">$1.20</span>
+                <div class="productacn">
+
+                    <button class="viewsbtn">View Details</button>
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+            <!--Product sample 10  -->
+            <div class="productcard" data-price="4.50" data-category="accessories">
+                <div class="productimg">
+                    <img src="Images/61dFFtjxqYL._AC_UF894,1000_QL80_.jpg" alt="Reusable Metal Straws">
+                </div>
+                <h3>Reusable Metal Straws</h3>
+                <p>Eco-friendly stainless steel straws to reduce single-use plastic waste.</p>
+                <span class="price">$4.50</span>
+
+                <div class="productacn">
+                    <button class="viewsbtn">View Details</button>
+                    <button class="cartbtn">🛒</button>
+                </div>
+            </div>
+            <!-- Product sample 11 -->
+
+            <div class="productcard" data-price="9.99" data-category="cleaning">
+                <div class="productimg">
+                    <img src="Images/dish-soap-ecowarehouse.jpg" alt="Eco Dish Soap">
+                </div>
+                <h3>Eco Dish Soap</h3>
+                <p>Plant-based dish soap tough on grease but gentle on the planet.</p>
+                <span class="price">$9.99</span>
+
+                <div class="productacn">
+                    <button class="viewsbtn">View Details</button>
+                    <button class="cartbtn">🛒</button>
+                </div>
+            </div>
+
+            <!-- Product sample 12 -->
+            <div class="productcard" data-price="3.49" data-category="accessories">
+                <div class="productimg">
+                    <img src="Images/Wooden_Bamboo_Hair_Comb.jpg" alt="Bamboo Hair Comb">
+                </div>
+                <h3>Bamboo Hair Comb</h3>
+                <p>Natural bamboo comb that reduces hair breakage and static.</p>
+                <span class="price">$3.49</span>
+
+                <div class="productacn">
+                    <button class="viewsbtn">View Details</button>
+                    <button class="cartbtn">🛒</button>
+                </div>
+            </div>
+
+            <!--Product sample 13  -->
+            <div class="productcard" data-price="14.25" data-category="food">
+                <div class="productimg">
+                    <img src="Images/WhatsAppImage2021-06-21at2.30.08PM.webp" alt="Organic Honey">
+                </div>
+                <h3>Organic Raw Honey</h3>
+                <p>Pure, unprocessed honey sourced from sustainable beekeeping farms.</p>
+                <span class="price">$14.25</span>
+
+                <div class="productacn">
+                    <button class="viewsbtn">View Details</button>
+                    <button class="cartbtn">🛒</button>
+                </div>
+            </div>
+
+            <!-- Product sample 14 -->
+            <div class="productcard" data-price="6.75" data-category="accessories">
+                <div class="productimg">
+                    <img src="Images/71Kaetvyx-L._AC_UF1000,1000_QL80_.jpg" alt="Reusable Cloth Napkins">
+                </div>
+                <h3>Reusable Cloth Napkins</h3>
+                <p>Washable cotton napkins to replace disposable paper napkins.</p>
+                <span class="price">$6.75</span>
+
+                <div class="productacn">
+                    <button class="viewsbtn">View Details</button>
+                    <button class="cartbtn">🛒</button>
+                </div>
+            </div>
+
+            <!-- Product sample 15 -->
+            <div class="productcard" data-price="18.90" data-category="clothing">
+                <div class="productimg">
+                    <img src="Images/Hoodie_Natural_Front_Final_655x655.webp" alt="Organic Cotton Hoodie">
+                </div>
+                <h3>Organic Cotton Hoodie</h3>
+                <p>Soft and warm hoodie made from sustainably grown organic cotton.</p>
+                <span class="price">$18.90</span>
+
+                <div class="productacn">
+                    <button class="viewsbtn">View Details</button>
+                    <button class="cartbtn">🛒</button>
+                </div>
+            </div>
+            <!-- Product sample 16 -->
+
+            <div class="productcard" data-price="7.20" data-category="cleaning">
+                <div class="productimg">
+                    <img src="Images/Eco_Laundry_Detergent_93ee0f81-d6fd-45c9-b161-e3ffc7b175c0.webp"
+                        alt="Eco Laundry Detergent">
+                </div>
+                <h3>Eco Laundry Detergent</h3>
+                <p>Biodegradable detergent that keeps clothes clean and waterways safe.</p>
+                <span class="price">$7.20</span>
+
+                <div class="productacn">
+                    <button class="viewsbtn">View Details</button>
+                    <button class="cartbtn">🛒</button>
+                </div>
+            </div>
+            <!-- Product sample 17 -->
+            <div class="productcard" data-price="5.60" data-category="food">
+                <div class="productimg">
+                    <img src="Images/herbal.jpg" alt="Herbal Tea">
+                </div>
+                <h3>Organic Herbal Tea</h3>
+                <p>Caffeine-free herbal tea blend made from organically grown herbs.</p>
+                <span class="price">$5.60</span>
+
+                <div class="productacn">
+                    <button class="viewsbtn">View Details</button>
+                    <button class="cartbtn">🛒</button>
+                </div>
+            </div>
+            <!--Product sample 18  -->
+            <div class="productcard" data-price="6.08" data-category="food">
+
+                <div class="productimg">
+                    <img src="Images/15.jpeg" alt="Himalayan Coffee">
+                </div>
+                <h3>Himalayan Coffee</h3>
+                <p>Sourced from the mineral-rich soils from Nepal.these beans offer a unique"mountain terrrior"
+                    characterized by low acidity and a smooth,sily taste.</p>
+                <span class="price">$25.50</span>
+                <div class="productacn">
+
+                    <button class="viewsbtn">View Details</button>
+                    </a>
+
+                    <button class="cartbtn" title="Add to Cart">
+                        🛒
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- html for footer section -->
+    <footer class="footer">
+        <div class="footercontr">
+
+            <div class="footerabout">
+                <h3>EcoMart 🍃</h3>
+                <p>Promoting sustainable living</p>
+            </div>
+            <!-- footer links as known as the quick links inside the footer class -->
+            <div class="footerlink">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="ProductPage.html">Shop</a></li>
+                    <li><a href="BlogPage.html">About</a></li>
+                    <li><a href="AboutUsPage.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--This contain the contact information for the Ecomart in the footer class at the button of the webpage-->
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>Email: info@ecomart.com</p>
+                <p>Phone: +977-976448745</p>
+                <p>Location: Dharan, Nepal</p>
+            </div>
+            <!--HTML for footer box inside the footer classs as this is the last part of the web page-->
+            <div class="footerbx">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get latest updates</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <!--end of footer for html page  -->
+        <div class="footerbtn">
+            <p>© 2026 EcoMart | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+        </div>
+    </footer><!--Footer tag is closed here-->
+    <script src="productpage.js"></script><!--External link for the js of product page-->
+</body><!--Body tag is closed here-->
+
+</html><!--This is the end of HTML as the closed tag of html is shown-->

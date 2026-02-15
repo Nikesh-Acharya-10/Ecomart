@@ -1,0 +1,307 @@
+/*CSS for the blog page as link this file with  */
+/*CSS for the paragraph written in the html page*/
+.paragraph {
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #F1F8F3;
+    border-left: 6px solid #2f6f3e;
+    text-align: left;
+}
+
+/* this shows the fonts and the size of the font*/
+.paragraph p {
+    font-size: clamp(18px, 1.6vw, 22px);
+    line-height: 2;
+    color: #000000;
+}
+
+
+/* Images inside topic content */
+.imagess {
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 2px solid #cde5d1;
+}
+
+/*CSS for the heading 2*/
+.paragraph h2 {
+    margin-bottom: 10px;
+    color: #2f6f3e;
+}
+
+/*Font size defined for the paragraph*/
+.paragraph p {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Basic page style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main heading */
+h1 {
+    margin-top: 30px;
+}
+
+/* Subtitle text */
+.subtitle {
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/*  BLOG BOX  */
+
+.blogcont {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/*CSS for the blog box that contain the paragraph images etc*/
+.blogbx {
+    width: 30%;
+    background-color: #F1F8F3;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    /* smooth hover effect */
+    cursor: pointer;
+}
+
+/* Basic page style */
+.blogbx:hover {
+    transform: translateY(-6px);
+    /* lift effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/*CSS for the heading 3 inside the blog page*/
+.blogbx h3 {
+    margin-top: 0;
+}
+
+/*CSS for the anchor tag that is inside the blogbox*/
+.blogbx a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* Basic page style */
+.blogbx a:hover {
+    color: #2f6f3e;
+    text-decoration: underline;
+}
+
+.para {
+    color: rgb(0, 0, 0);
+
+}
+
+/* Read More feature */
+.more-text {
+    display: none;
+}
+
+.read-more-btn {
+    background-color: #2f6f3e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.read-more-btn:hover {
+    background-color: #245a32;
+}
+
+/*  FOOTER  */
+.footer {
+    background-color: #1f3d2b;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/*CSS for the div class footercontr*/
+.footercontr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*CSS for the H3 and H4 inside the footer section*/
+.footer h3,
+.footer h4 {
+    margin-bottom: 10px;
+    color: #a8e6a3;
+}
+
+/*CSS for the paragraph tag in the footer section*/
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footerlink ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerlink ul li {
+    margin-bottom: 8px;
+}
+
+.footerlink ul li a,
+.footerbtn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footerlink ul li a:hover,
+.footerbtn a:hover {
+    text-decoration: underline;
+}
+
+.footerbtn {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #3a5f4b;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .banner {
+        height: 220px;
+    }
+}
+
+/* Mobile (max 600px) */
+@media (max-width: 600px) {
+    .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rightside {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+}
+
+/* Tablet (600px–900px) */
+@media (max-width: 900px) {
+    .productcontr {
+        gap: 20px;
+    }
+}
+
+.footerbx {
+    flex: 0 0 22%;
+    min-width: 200px;
+}
+
+
+/* Headings */
+.footerbx h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2ecc71;
+}
+
+/* Links */
+.footerbx a {
+    display: block;
+    color: #e0f2ea;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s ease;
+}
+
+/*Hover effect for the Footer box of quickl links*/
+.footerbx a:hover {
+    color: #2ecc71;
+    padding-left: 6px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d6f5ea;
+}
+
+/* Input */
+.footerbx input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+.footerbx button {
+    margin-top: 10px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2ecc71;
+    color: #0f3d2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/*Hover effect for the button that contain in the footer*/
+.footerbx button:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Social icons below EcoMart in footer */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/*INage for the social medai icon */
+.social-icons a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/*Hover effect for the image that is present in the footer section*/
+.social-icons a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}

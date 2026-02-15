@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart</title>
+    <link rel="stylesheet" href="Blogpage.css"><!--this is the external link for the css of the Blog page-->
+    <!--this style tag contains the inline css for the blog page--->
+    <style>
+        /*This css will define the whole webpage*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /*This is the css define the body of the webpage*/
+        body {
+            background: linear-gradient(to bottom,
+                    #f5f3e8,
+                    #ffffff,
+                    #eef5ee);
+        }
+
+        /* css for header */
+        .header {
+            text-align: center;
+            padding: 30px 10px;
+            margin-top: 140px;
+        }
+
+        /*Css for the heading 1 in header class*/
+
+        .header h1 {
+            font-size: clamp(22px, 4vw, 32px);
+        }
+
+        .header p {
+            font-size: clamp(13px, 2vw, 16px);
+        }
+
+        /* css for top bar heading with ecomart log and name  */
+
+        .bar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #ffffff;
+        }
+
+        /*This is the css for the top bar of blog page*/
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 30px;
+            background-color: #1f3d2b;
+            flex-wrap: wrap;
+        }
+
+        /*This is the css for the logo of Webpage*/
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .rightside {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        /*This is the css for the searchbox*/
+        .searchbox {
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        /*CSS for the cart icon*/
+        .cart {
+            font-size: 20px;
+            color: white;
+        }
+
+        .search {
+            position: relative;
+        }
+
+        /*CSS for the Search icon*/
+        .searchicon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        /* css for navigation bar */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 18px 0;
+            background-color: #e6efdf;
+            flex-wrap: wrap;
+        }
+
+        /*THis is the css for the anchor tag for the navigation bar*/
+        .menu a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            color: black;
+        }
+
+        .menu:hover a:not(:hover) {
+            opacity: .7;
+            transform: scale(.85);
+            color: rgb(224, 180, 123);
+        }
+    </style>
+</head>
+<!--The head tag ends and bogy tag starts from here-->
+
+<body>
+
+    <!-- top bar heading with ecomart log and name -->
+    <header class="bar">
+        <div class="top">
+            <div class="logo">
+                <span class="mart">EcoMart</span> <!-- Mart name  -->
+                <span class="leaf">🍃</span><!-- logo of mart-->
+            </div>
+            <!-- this display the icon for the cart inside the header section -->
+            <div class="rightside">
+                <span class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </span>
+            </div>
+        </div>
+        <hr>
+        <!--This is the nav bar that include the link for other webpages-->
+        <nav class="menu">
+            <a href="HomePage.html">Home</a>
+            <a href="ProductPage.html">Products</a>
+            <a href="BlogPage.html">Blog</a>
+            <a href="ResearchPage.html">Research</a>
+            <a href="AboutUsPage.html">About Us</a>
+            <a href="login page.html">Login</a>
+        </nav>
+    </header>
+    <!-- heading for blog page -->
+    <h1>Our Blog</h1>
+    <!-- This section include the breif defination on the following topics  -->
+    <section id="tshirt" class="paragraph">
+        <h2>How technology has affected daily life and business?</h2><!--  -->
+        <p>
+            The use of technology has been integrated into the way of life nowadays. It has transformed the lifestyle of
+            people, their working, communication, and business.
+            Technology is a very crucial aspect in the contemporary world in both the daily routine and large business
+            ventures.Technology has developed at a very high rate thus making life simple, quick and comfortable.
+            <img src="images/technology.png" class="imagess"
+                alt="Technology in daily life"><!-- this is the link that include the picture thai is related for the given topic -->
+            It has particularly enhanced communication, education, healthcare, as well as the business activities.
+            Phones, email, social media and video calls help people stay connected regardless of distance.
+            People used to rely on the use of letters and landline phones which were very slow.
+
+            <span class="dots">...</span>
+
+            <span class="more-text" style="display: none;"><!-- this is the more text that is hidden initially -->
+                However,
+                the technological advancements have made communication instant and more efficient.
+                it is now possible to have video calls with people across the globe in real time.
+                At 21st century, the internet is a major source of information and communication.
+                Nowadays, one can share information in few seconds. Entertainment has also become simpler with the aid
+                of
+                technology where online videos, music applications, and online games are available.
+                Technology has contributed a lot in education.
+                The students are able to have web based classes, they can
+                watch instructional videos and browse study materials online.
+                Online libraries and resources enable the student to acquire additional knowledge other than the text
+                books.
+                Technology enables the learners to study at their speed and also enhances their comprehension of some
+                awkward subjects.
+                Making learning easier and availing it whenever there is an emergency, online education has become
+                extremely
+                convenient.
+                Healthcare services have been enhanced through technology. The hospitals are equipped with contemporary
+                machines and digital systems in diagnosing and treatment.
+                Such online medical consultation and health apps allow individuals to obtain medical help without going
+                to
+                the hospitals regularly.
+                The wearable devices allow individuals to monitor their health including the heart rate and daily
+                activities. These inventions have assisted in the development of better health services and prevent
+                deaths.
+                Technology saves on time and effort in the day to day activities of a house. Home works are easy because
+                of
+                the modern amenities such as washing appliances, refrigerators, and microwave ovens.
+                Shopping deals can also be done online through shopping platforms where persons purchase items at the
+                convenience of their homes.
+                <img src="images/daily-life.jpg" class="imagess"
+                    alt="Technology in daily life"><!-- As the image is show for the given topic -->
+                Online banking and the use of mobile wallets as digital payment systems have seen financial transactions
+                being quickly and safely carried out.
+                The life has been organized and efficient with the help of technology. Technology has caused significant
+                changes in the aspect of business.
+                Computers, software, and digital tools are used by businesses to handle information such as data,
+                accounts
+                and customer information.
+                Technology is used to ease paper work, conserve time and productivity. The business communication has
+                also
+                been enhanced with the help of emails, messaging applications, and video conferencing.
+                Technology has resulted into many businesses being conducted across the globe. Technologies of web
+                development like HTML, CSS, and JavaScript are also significant in the contemporary business.
+                The basic structure of the websites i.e. headings, pictures, and links is created by the usage of HTML
+                (HyperText Markup Language).
+                The websites are designed and styled using CSS (Cascading Style Sheets), which makes the websites
+                appealing
+                and simple to use.
+                JavaScript enhances the interaction of the websites making it possible to have such features as buttons,
+                forms, pop-up messages, and dynamic content.
+                the technologies assist businesses in designing professional websites that will be able to market their
+                products and services.
+                Businesses have the capability to communicate through websites and share products and information as
+                well as
+                carry out communication with customers.
+                And, as an example, online stores can process product details with HTML, product cards with CSS, and
+                additional functionality, such as an Add to Cart button, with JavaScript.
+                The filter system is another key feature that the use of JavaScript makes possible.
+
+                Filters give the opportunity to search and classify products in terms of categories, cost, or any other
+                factors.
+                Just as an example, customers will be able to filter the products according to the price (low-high),
+                category, or type.
+                This enhances customer experience and facilitates the search of products among the customers. The use of
+                filters saves time and makes web sites efficient and this is very serious in the case of online
+                business.
+                One of the largest influences of technology on the business is E-commerce. Through online stores,
+                business
+                can be used to sell products to the global market without necessarily having to have physical stores.
+                Customers have the ability to make comparisons, reviews and make orders at ease. The technology has also
+                enabled the small businesses and startups to expand as access to online platforms can be accessed
+                cheaply.
+                Technology has transformed people mode of work. There are numerous businesses that give employees an
+                opportunity to work at home using internet and computers.
+                Collaboration tools, online meetings, and storage using clouds enable employees to promote effective
+                collaboration. This is flexible, which enhances the work-life balance and saves travel costs.
+                There are however some disadvantages to technology as well. Overindulgence in technology may lead to
+                medical
+                conditions such as straining of the eyes and physical inactivity.
+                Automation can also eliminate some employment opportunities among the business individuals. The risk of
+                cybersecurity and threats to data privacy are also on the rise.
+                As such, the application of technology must be in a prudent manner. To sum up, technology has made
+                significant positive impacts on the lives of people and business.
+                It has enhanced business, communication, learning, and medical services. The use of technologies such as
+                HTML, CSS, and JavaScripts have enabled the businesses to expand using websites and online platform.
+                Such elements as filters have become quicker and more convenient. Even though technology has had some
+                adverse impact, the positive aspects are much more.
+                Technology will evolve the human life and the development of business in future when employed in a sound
+                way.
+
+            </span>
+        </p>
+        <button class="read-more-btn" onclick="toggleReadMore(this)">
+            Read More
+        </button>
+    </section>
+    <!--Paragraph about A global outlook -->
+    <section id="bottle" class="paragraph">
+        <h2>Renewable Energy Technologies: A Global Outlook</h2><!-- this the heading for the another topic -->
+        <p>
+            Renewable energy technologies are becoming important in dealing with issues of global concern like climate
+            change, energy security, environmental degradation and so on.
+            The technologies of renewable energy are becoming more affordable and economically feasible with the
+            downward costs and increasing efficiency.
+            The reliability of renewable energy has been further increased by the future breakthrough in energy storage
+            technologies e.g. batteries being used to overcome intermittency problems.
+            <img src="images/renewableenergybakery_medium.avif" class="imagess" alt="Renewable energy">
+            Renewable sources of energy are environmentally friendly and less polluting when compared to fossil fuels
+            since they generate minimal or no greenhouse gases, which is why they can be considered as a more viable and
+            clean means of addressing the increasing energy needs of the world.
+
+            <span class="dots">...</span>
+
+            <span class="more-text" style="display: none;"><!-- this is the more text that is hidden initially -->
+                Solar power has emerged as one of the most prominent renewable energy technologies globally. The
+                declining costs of solar panels and advancements in photovoltaic technology have made solar energy more
+                accessible and affordable. Countries around the world are investing in large-scale solar farms and
+                promoting rooftop solar installations to harness this abundant energy source.
+                Wind power is the harnessing of kinetic energy of wind through the wind turbines and is among the most
+                rapidly developing renewable energy across the world.
+                Hydropower, which is produced out of flowing or falling waters, is the greatest contributor to renewable
+                electricity as well as a source of dependable and enormous production of energy.
+                Biomass energy and geothermal energy are other significant renewable technologies that utilize organic
+                substances such as agricultural waste to generate heat or electricity and geothermal, respectively,
+                harness
+                the heat that is stored underground under the surface of the earth to generate power and heat
+                respectively.
+
+                In conclusion, renewable energy technologies hold immense potential for a sustainable future. With
+                ongoing
+                advancements, decreasing costs, and supportive policies, the global outlook for these technologies is
+                optimistic. Embracing renewable energy not only addresses environmental concerns but also promotes
+                economic
+                growth and energy security on a global scale.
+            </span>
+        </p>
+        <button class="read-more-btn" onclick="toggleReadMore(this)">
+            Read More
+        </button>
+    </section>
+    <!--Paragraph about Positive and Negative impact of technology -->
+    <section id="bottle" class="paragraph">
+        <h2>About Technology • Positive Impact of Technology • Negative Impact of Technology</h2>
+        <!-- this the heading for the another topic -->
+        <p>
+            The use of technology has become a significant component of life. It involves machines, software and
+            mechanisms that assist human beings to work with less effort and effortlessly.
+            The impacts of technology to the society are numerous. It enhances business, communication, and education,
+            and healthcare.
+            The internet has allowed people to have access to information fast, do shopping online and also to make
+            known their presence everywhere in the world.
+            <img src="images/positive-and-negative-impact-of-technology-on-education.webp" class="imagess"
+                alt="Positive and Negative impact of Technology">
+            Technology is also very supportive to the innovation and assisting the real world problems. Nonetheless,
+            there are negative effects of technology.
+            <span class="dots">...</span>
+            <span class="more-text" style="display: none;"><!-- this is the more text that is hidden initially -->
+                Positive Impact of Technology
+                Excess use of digital devices may lead to health problems, decrease in person-to-person communication
+                and
+                dependency.
+
+                Also, electronic waste and large energy usage have the potential of damaging the environment when not
+                done
+                in a proper manner.
+                Boost Sustainable Product Sales With Technology. Technology has a significant contribution towards
+                marketing
+                and enhancing sales of environmental-friendly products.
+                Businesses can also easily access customers through websites, mobile applications, and social media
+                channels
+                to create awareness about the products that are eco-friendly.
+                Sustainable products are being promoted to people due to the effect they have on environmental pollution
+                reduction, conservation of natural resources, as well as ethical production methods.
+                Sustainable living tips and tricks, which include the minimization of plastic, electricity, and home
+                waste
+                recycling, are also offered through technology.
+                There are numerous online resources where interviews with sustainable brands and professionals are
+                shared,
+                which makes consumers know how products are produced and what sustainability is.
+                Frequent news and updates on environmental matters allow people to be aware of climate change,
+                pollution,
+                and environmental challenges in the world.
+                These web-based applications encourage people to be responsible and live a green life.
+                <img src="images/main-qimg-d1d6fe7b91d8e3c5c7c3925e7b33b326-lq.jpg" class="imagess"
+                    alt="Technology and Sustainability"><!-- As the image is show for the given topic -->
+                Technology also assists in tracking and measuring the environmental impact of products and services.
+                Businesses can use data analytics and artificial intelligence to evaluate their carbon footprint, energy
+                usage, and waste production.
+                This information helps them to make informed decisions on how to improve their sustainability practices
+                and
+                reduce their environmental impact.
+                Technology also enables the development of innovative solutions for sustainable living, such as smart
+                homes,
+                renewable energy systems, and sustainable transportation options.
+                These technologies help to reduce energy consumption, lower greenhouse gas emissions, and promote a more
+                sustainable lifestyle.
+                To sum up, technology in its responsible use assists in sustaining development and is based on education
+                of
+                human beings, popularization of eco-friendly products and positive environmental practices.
+                It is a connector between the consumers and sustainable solutions as well as contributing to the better
+                future of the planet.
+            </span>
+        </p>
+        <button class="read-more-btn" onclick="toggleReadMore(this)">
+            Read More
+        </button>
+    </section>
+    <!--paragraph about microplastics -->
+    <section id="toothbrush" class="paragraph">
+        <h2>Impact of Microplastics on Marine Ecosystems</h2>
+        <p>
+            The most common type of plastic that is invisible everywhere in the sea is microplastics, the tiny plastic
+            particles less than 5 mm in length known as microplastics have become widespread pollutants in the universe
+            oceans,
+            and their concentration is growing at an alarming rate and is likely to continue growing exponentially
+            unless corresponding action is taken.
+            Recent studies indicate that marine animals of different trophic levels, such as planktons, fish, and marine
+            mammals, ingest microplastics.
+            <span class="dots">...</span>
+            <span class="more-text" style="display: none;"><!-- this is the more text that is hidden initially -->
+                The ingestion of microplastics may lead to physical harm, chemical toxicity, and biological effects on
+                the
+                marine organisms.
+                As an illustration, polluted planktons may not be as efficient in photosynthesis and carbon cycling
+                undermining the ocean capacity to capture carbon and regulate climate.
+
+                These are the particles that are formed of the destruction of greater plastic waste, synthetic fibers of
+                the
+                textile, and microbeads of consumer goods, introduced into the marine environment through rivers,
+                runoff,
+                and coastal trash.
+                After ingestion, microplastics may result into physical, chemical toxicity (e.g., decreased feeding,
+                growth
+                stunted) and chemical toxicity related to pollutant (e.g., heavy metals, persistent organic compounds)
+                engulfed by the plastics.<img src="Images/micro.png" class="imagess" alt="Microplastics in ocean">
+                The marocopic effects of microplastics on marine organisms include obstruction of the digestive tract,
+                reduced
+                feeding stimulus, and energy depletion. microplastics may also act as vectors for the transfer of
+                harmful chemicals and pathogens
+                into the marine organisms. organisms that ingest microplastics may be exposed to toxic chemicals that
+                are adsorbed onto the plastic
+                surface, leading to bioaccumulation and biomagnification of these pollutants in the food web.
+                in addition, microplastics may also serve as a substrate for the growth of harmful microorganisms, which
+                may
+                cause diseases in marine organisms.
+                Results of these effects may include oxidative stress, behavioral alteration, reproductive problems and
+                loss
+                of life, thus disabling food webs and biodiversity.
+                in conclusion, microplastics pose a significant threat to marine ecosystems and the organisms that
+                inhabit them.
+                As an illustration, their presence may disrupt the carbon cycling process through their interference of
+                the
+                phytoplankton, zooplankton, undermining the ability of the ocean to absorb the carbon, which may amplify
+                the
+                impacts of climate change.
+            </span>
+        </p>
+        <button class="read-more-btn" onclick="toggleReadMore(this)">
+            Read More
+        </button>
+    </section>
+
+    <!-- the below section shows that some article written in the blog page -->
+
+    <!-- Sub heading -->
+    <p class="subtitle">
+        <b> Explore articles on eco-friendly living and how technology impacts daily life and business.</b>
+    </p>
+
+    <!-- Blog container -->
+    <div class="blogcont">
+
+        <!-- Blog box 1 -->
+        <div class="blogbx">
+            <h3>The future of sustainable tech.</h3>
+            <p class="para">
+                Discover how new technologies are paving the way for a more
+                sustainable future, from renewable energy to smart recycling solutions.
+            </p>
+            <button class="read-more-btn">
+                Read More
+            </button>
+        </div>
+
+        <!-- Blog box 2 -->
+        <div class="blogbx">
+            <h3>Eco-friendly Habits for daily life.</h3>
+            <p class="para">
+                Simple yet effective tips to incorporate eco-conscious
+                practices into your everyday routine, reducing your carbon footprint.
+            </p>
+            <button class="read-more-btn">
+                Read More
+            </button>
+        </div>
+
+        <!-- Blog box 3 -->
+        <div class="blogbx">
+            <h3>Green Business: A path to prosperity.</h3>
+            <p class="para">
+                Learn how businesses are adopting sustainable models,
+                benefitting both the environment and their bottom line.
+            </p>
+            <button class="read-more-btn">
+                Read More
+            </button>
+        </div>
+
+        <!-- Blog box 4 -->
+        <div class="blogbx">
+            <h3>The impact of AI on environmental monitoring.</h3>
+            <p class="para">
+                Explore how AI is revolutionizing environmental monitoring,
+                helping us track and protect our planet.
+            </p>
+            <button class="read-more-btn">
+                Read More
+            </button>
+        </div>
+
+        <!-- Blog box 5 -->
+        <div class="blogbx">
+            <h3>Gardening for a Greener Home.</h3>
+            <p class="para">
+                Tips and tricks for starting your own eco-friendly garden,
+                even in small spaces, to enhance your home’s sustainability.
+            </p>
+            <button class="read-more-btn">
+                Read More
+            </button>
+        </div>
+
+        <!-- Blog box 6 -->
+        <div class="blogbx">
+            <h3>Sustainable Fashion: Trends and Future.</h3>
+            <p class="para">
+                Dive into the world of sustainable fashion, understanding ethical
+                production, eco-friendly materials, and conscious consumption.
+            </p>
+            <button class="read-more-btn"> Read More
+            </button>
+        </div>
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footercontr">
+
+            <div class="footerabout">
+                <h3>EcoMart 🍃</h3>
+                <p>Promoting sustainable living</p>
+            </div>
+            <!-- this is the footer link for the quick access -->
+            <div class="footerlink"><!-- This is the div container that include teh quicks links -->
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="ProductPage.html">Shop</a></li>
+                    <li><a href="BlogPage.html">About</a></li>
+                    <li><a href="AboutUsPage.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact"><!--this include the information of the Ecomart for easy contact -->
+                <h4>Contact Info</h4>
+                <p>Email: info@ecomart.com</p>
+                <p>Phone: +977-976448745</p>
+                <p>Location: Dharan, Nepal</p>
+            </div>
+            <div class="footerbx"><!-- This class provide the place for email that can be easily access -->
+                <h3>Newsletter</h3>
+                <p>Subscribe to get latest updates</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <!-- This is the footer for the Ecomart that have the Privacy policy-->
+        <div class="footerbtn">
+            <p>© 2026 EcoMart | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+        </div>
+    </footer>
+    <script src="BlogPage.js"></script><!-- this is the external link for the js of the Blog page-->
+</body>
+
+</html>

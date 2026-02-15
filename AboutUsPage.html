@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart</title>
+    <!--External CSS is linked using link -->
+    <link rel="stylesheet" href="Aboutuspage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- heading and navigation bar -->
+    <header class="bar">
+        <div class="top">
+            <div class="logo">
+                <span class="mart">EcoMart</span>
+                <span class="leaf">🍃</span>
+            </div>
+            <span class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+        </div>
+        </div>
+
+        <hr>
+        <!-- Nav bar that have class menue and which include anchor tag -->
+        <nav class="menu">
+            <a href="HomePage.html">Home</a>
+            <a href="ProductPage.html">Products</a>
+            <a href="BlogPage.html">Blog</a>
+            <a href="ResearchPage.html">Research</a>
+            <a href="AboutUsPage.html">About Us</a>
+            <a href="login page.html">Login</a>
+        </nav>
+    </header>
+
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- About Us -->
+        <h2>About Us</h2>
+        <div class="about">
+            <div>
+                <h3>Our Story</h3>
+                <p> Ecomart was founded with a vision to provide high-quality, sustainable products to our customers. We
+                    believe in ethical sourcing and environmentally friendly practices.</p>
+                <p> Since our inception, we have grown into a trusted name in the e-commerce space, committed to
+                    customer satisfaction and community engagement.</p>
+            </div>
+            <!--Our mission written in the Div container that have mission   -->
+            <div>
+                <h3>Our mission</h3>
+                <p>Our mission is to make sustainable living accesible and affordable for everyone. We strive to offer a
+                    diverse range of products that meet the highest standards of quality and environmental
+                    responsibility.</p>
+                <p>We are dedicated to fostering a positive impact on both our customers' lives and the planet.</p>
+            </div>
+        </div>
+
+        <!--Breif defination about our team  -->
+        <h2>Our Team</h2>
+
+        <div class="teamconta">
+
+            <!-- MEMBER 1 -->
+            <div class="teamcard">
+                <div class="teamimg">
+                    <img src="images/nik.jpeg" alt="Team Member"><!-- Image of the team member -->
+                    <div class="teaminfo">
+                        <h3>Nikesh Acharya</h3>
+                        <span>Group Leader</span>
+                        <p>Overall Design and Home Page with JavaScript.</p>
+                    </div>
+                </div>
+                <div class="teambtn"><!-- Button that shows more details about the team member -->
+                    <a href="NikeshPortfoilo.html">View Details</a>
+                </div>
+            </div>
+
+            <!-- details of the sesehang badhur sampahangh -->
+            <div class="teamcard">
+                <div class="teamimg">
+                    <img src="Images/sese.JPG" alt="Team Member">
+                    <div class="teaminfo">
+                        <h3>Sesehang Badhur Sampahangh</h3>
+                        <span>Product Manager</span>
+                        <p>Handles product page and content.</p>
+                    </div>
+                </div>
+                <div class="teambtn">
+                    <a href="sesehangPortfilo.html">View Details</a>
+                </div>
+            </div>
+
+            <!-- Details of Ayush Chaudhary -->
+            <div class="teamcard">
+                <div class="teamimg">
+                    <img src="images/aayushcha.jpeg" alt="Team Member">
+                    <div class="teaminfo">
+                        <h3>Ayush Chaudhary</h3>
+                        <span>Blog Designer</span>
+                        <p>Manages blog and tech impact content.</p>
+                    </div>
+                </div>
+                <div class="teambtn">
+                    <a href="AayushPortfilo.html">View Details</a>
+                </div>
+            </div>
+
+            <!-- Details of Ayush Sanyok -->
+            <div class="teamcard">
+                <div class="teamimg">
+                    <img src="images/aayushlimbu.jpeg" alt="Team Member">
+                    <div class="teaminfo">
+                        <h3>Ayush Sanyok</h3>
+                        <span>Researcher & Designer</span>
+                        <p>Research page and brand strategy.</p>
+                    </div>
+                </div>
+                <div class="teambtn">
+                    <a href="AyushLimbuportfilo.html">View Details</a>
+                </div>
+            </div>
+
+            <!-- Details of Mingma Sherpa -->
+            <div class="teamcard">
+                <div class="teamimg">
+                    <img src="images/mingma.jpeg" alt="Team Member">
+                    <div class="teaminfo">
+                        <h3>Mingma Sherpa</h3>
+                        <span>About Us Manager</span>
+                        <p>Designed About Us and contact form.</p>
+                    </div>
+                </div>
+                <div class="teambtn">
+                    <a href="MingmaPortfilo.html">View Details</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Contact Us-->
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <form name="message" onsubmit="return formvalidation()">
+
+                <label>Name:</label><!--Place where a user can input his name   -->
+                <input type="text" name="Name"
+                    placeholder="Name"><!--Placeholder that contains the name entered by the user-->
+
+                <label>Your Phone:</label><!-- Place where a user can input his PHone number   -->
+                <input type="text" name="Phone" placeholder="Phone">
+
+                <label>Your Email</label><!-- Place where a user can input his email  -->
+                <input type="email" name="Email" placeholder="Email">
+
+                <label>Your
+                    Message</label><!-- Place where a user can input leave the feedback and send message to us  -->
+                <textarea name="Message"
+                    placeholder="Your Message about this website what is your opinion about our products and website."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <!-- This is the contact info of the Ecomart -->
+            <div class="contactinfo">
+                <h4>Company Info</h4>
+                <p margin-bottom: 8px;><strong>Address:</strong> Dharan, Nepal</p>
+                <p margin-bottom: 8px;><strong>Phone:</strong> 9764480745</p>
+                <p margin-bottom: 8px;><strong>Email:</strong> info@ecomart.com</p>
+
+                <!-- Map that shows the location of our store-->
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80584.47895223527!2d87.14470394241626!3d26.796521141050803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef419fc7271c1d%3A0x1d1300367590c002!2sDharan!5e0!3m2!1sen!2snp!4v1768366201693!5m2!1sen!2snp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer for the About us page -->
+    <footer class="footer">
+        <div class="footercontr">
+
+            <div class="footerabout">
+                <h3>EcoMart 🍃</h3>
+                <p>Promoting sustainable living</p>
+            </div>
+            <!-- this is the footer link for the quick access -->
+            <div class="footerlink"><!-- This is the div container that include teh quicks links -->
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="ProductPage.html">Shop</a></li>
+                    <li><a href="BlogPage.html">About</a></li>
+                    <li><a href="AboutUsPage.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact"><!--this include the information of the Ecomart for easy contact -->
+                <h4>Contact Info</h4>
+                <p>Email: info@ecomart.com</p>
+                <p>Phone: +977-976448745</p>
+                <p>Location: Dharan, Nepal</p>
+            </div>
+            <div class="footerbx"><!-- This class provide the place for email that can be easily access -->
+                <h3>Newsletter</h3>
+                <p>Subscribe to get latest updates</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <!-- This is the footer for the Ecomart that have the Privacy policy-->
+        <div class="footerbtn">
+            <p>© 2026 EcoMart | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+        </div>
+    </footer>
+    <script src="Aboutus.js"></script>
+</body>
+
+</html>

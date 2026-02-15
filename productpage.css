@@ -1,0 +1,505 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Body background gradient */
+body {
+    background: linear-gradient(to bottom,
+            #f5f3e8,
+            #ffffff,
+            #eef5ee);
+}
+
+/* css for header */
+.header {
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 140px;
+}
+
+
+.header h1 {
+    font-size: clamp(22px, 4vw, 32px);
+}
+
+.header p {
+    font-size: clamp(13px, 2vw, 16px);
+}
+
+/* css for top bar heading with ecomart log and name  */
+
+.bar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+/* CSS for the top section containing logo, search box, and cart icon */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background-color: #1f3d2b;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.rightside {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.searchbox {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.cart {
+    font-size: 20px;
+    color: white;
+}
+
+.search {
+    position: relative;
+}
+
+.searchicon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    pointer-events: none;
+}
+
+/* css for navigation bar */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 18px 0;
+    background-color: #e6efdf;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+/* Hover effect for navigation links */
+.menu:hover a:not(:hover) {
+    opacity: .7;
+    transform: scale(.85);
+    color: rgb(224, 180, 123);
+}
+
+
+/* CSS for prodeuct details with its style as present in home page */
+.productssect {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+.productssect h2 {
+    font-size: clamp(20px, 4vw, 26px);
+    margin-bottom: 30px;
+}
+
+.productcont {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+/* CSS for individual product cards */
+.productcard {
+    width: 100%;
+    max-width: 260px;
+    background-color: #EAF4EC;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.productcard:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.productcard.hover>.productcard:not(:hover) {
+    transform: scale(0.9, 0.9);
+    filter: blur(10px);
+}
+/* CSS for product image inside the product card */
+.productimg {
+    width: 100%;
+    height: 180px;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    margin-bottom: 12px;
+}
+
+
+.productimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.productcard h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.productcard p {
+    color: #000;
+    font-size: 13px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.productcard button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1f3d2b;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/*CSS for the div class footercontr*/
+.footercontr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*CSS for the H3 and H4 inside the footer section*/
+.footer h3,
+.footer h4 {
+    margin-bottom: 10px;
+    color: #a8e6a3;
+}
+
+/*CSS for the paragraph tag in the footer section*/
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footerlink ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerlink ul li {
+    margin-bottom: 8px;
+}
+
+.footerlink ul li a,
+.footerbtn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footerlink ul li a:hover,
+.footerbtn a:hover {
+    text-decoration: underline;
+}
+
+.footerbtn {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #3a5f4b;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.footerbx {
+    flex: 0 0 22%;
+    min-width: 200px;
+}
+
+
+/* Headings */
+.footerbx h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2ecc71;
+}
+
+/* Links */
+.footerbx a {
+    display: block;
+    color: #e0f2ea;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s ease;
+}
+
+/*Hover effect for the Footer box of quickl links*/
+.footerbx a:hover {
+    color: #2ecc71;
+    padding-left: 6px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d6f5ea;
+}
+
+/* Input */
+.footerbx input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+.footerbx button {
+    margin-top: 10px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2ecc71;
+    color: #0f3d2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/*Hover effect for the button that contain in the footer*/
+.footerbx button:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Social icons below EcoMart in footer */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/* CSS for the image that is present in the footer section*/
+.social-icons a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/*Hover effect for the image that is present in the footer section*/
+.social-icons a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
+
+/* CSS for product page button that are used  */
+
+.productacn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    gap: 8px;
+}
+
+.viewlink {
+    text-decoration: none;
+}
+
+.viewsbtn {
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    background-color: #2f6f3e;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.viewsbtn:hover {
+    background-color: #245a32;
+}
+
+/* CSS for cart button present in the top bar*/
+.cartbtn {
+    padding: 7px 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Hover effect for cart button */
+.cartbtn:hover {
+    background-color: #e6efdf;
+    transform: scale(1.1);
+}
+
+.cart {
+    position: relative;
+}
+
+/* CSS for the cart item count cart */
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/*  FILTER SECTION  */
+
+.filtersec {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 40px;
+    padding: 18px 25px;
+    background-color: #f6fdf6;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* Category + Sort */
+.filterctr {
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/*  FILTER SECTION */
+
+.filtersec {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Search */
+.search1 {
+    position: relative;
+    width: 230px;
+}
+
+/* CSS for the input button */
+.search1 input {
+    width: 100%;
+    padding: 10px 42px 10px 16px;
+    /* space for icon */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+/* CSS for the search button */
+.search1 button {
+    background-color: #bcc1bd;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+/* CSS for the select button */
+.filterctr select {
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* responsive styles for mobile with max width of 600px  */
+@media (max-width: 600px) {
+    .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .right-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+}
+
+/* responsive styles for tablet with max width of 900px  */
+@media (max-width: 900px) {
+    .productcont {
+        gap: 20px;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .banner {
+        height: 220px;
+    }
+}

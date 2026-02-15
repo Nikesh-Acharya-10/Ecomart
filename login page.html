@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMart Login</title>
+    <link rel="stylesheet" href="login page.css"><!-- this tag links the external link for the css of login page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--link for the cart icon and searchbutton  -->
+</head>
+<!--body of the login page starts   -->
+<body>
+    <!-- HEADER -->
+    <header class="bar">
+        <div class="top">
+            <div class="logo">EcoMart 🍃</div>
+            <span class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+        </div>
+        <!-- Navigation bar with anchor tag linked to each pages -->
+        <nav class="menu">
+            <a href="HomePage.html">Home</a>
+            <a href="ProductPage.html">Products</a>
+            <a href="BlogPage.html">Blog</a>
+            <a href="ResearchPage.html">Research</a>
+            <a href="AboutUsPage.html">About Us</a>
+            <a href="login page.html">Login</a>
+        </nav>
+    </header>
+    <!-- LOGIN CENTER -->
+    <div class="loginwrapper"><!--  -->
+        <div class="logincard"><!--  -->
+            <h2>Login to EcoMart</h2>
+            <!-- Login form for a uses as email to login -->
+            <form id="loginForm">
+                <div class="formgroup">
+                    <label>Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="emailError"></div>
+                </div>
+                <!--Password entry point for the customer  -->
+                <div class="formgroup">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <div class="error" id="passwordError"></div>
+                </div>
+                <!-- Submit button for the form  -->
+                <button type="submit" class="loginbtn">Login</button>
+            </form>
+            <!-- IF user is using it for the first time then-->
+            <div class="links">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+                <p><a href="#">Forgot Password?</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- html for footer section -->
+    <footer class="footer">
+        <div class="footercontr">
+
+            <div class="footerabout">
+                <h3>EcoMart 🍃</h3>
+                <p>Promoting sustainable living</p>
+            </div>
+            <!-- footer links as known as the quick links inside the footer class -->
+            <div class="footerlink">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="ProductPage.html">Shop</a></li>
+                    <li><a href="BlogPage.html">About</a></li>
+                    <li><a href="AboutUsPage.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--This contain the contact information for the Ecomart in the footer class at the button of the webpage-->
+            <div class="footercontact">
+                <h4>Contact Info</h4>
+                <p>Email: info@ecomart.com</p>
+                <p>Phone: +977-976448745</p>
+                <p>Location: Dharan, Nepal</p>
+            </div>
+            <!--HTML for footer box inside the footer classs as this is the last part of the web page-->
+            <div class="footerbx">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get latest updates</p>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <!--end of footer for html page  -->
+        <div class="footerbtn">
+            <p>© 2026 EcoMart | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+        </div>
+    </footer><!--Footer tag is closed here-->
+    <!--Javascript is linked for the valadataion of the login page  -->
+    <script src="login page.js"></script>
+</body>
+
+</html>
